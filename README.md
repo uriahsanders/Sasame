@@ -30,7 +30,7 @@ from any perspective.
 
 Sasame.
 
-Labels flags as:
+Label flags as:
 
 Flag: Sasame
 or
