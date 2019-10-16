@@ -10,8 +10,11 @@
 # and breaks it into useful paths
 # fractally and forever
 
-# This is just one potential simple implementation of Sasame
-# Read more in the README
+# This is the simplest possible implementation of Sasame.
+# Constantly adding speech, sieve, and pathing functions
+# via 'hard-coding', will ALWAYS result
+# in a general AI that lacks a domain,
+# per Godel's Incompleteness Theorem
 class Sasame:
     # Where data is a string
     # speech_transformations is a list
@@ -53,7 +56,7 @@ class Sasame:
             # Build data
             if self.num_iterations > 0:
                 self.data = sasamatic_speech(self.data)
-            # Rank data
+            # Rank/categorize data
             self.data = sasamatic_sieve(self.data)
             # Add data to the list of all data
             self.sasame = sasame.append(self.data)
@@ -61,16 +64,20 @@ class Sasame:
     # Find a useful path
     # Through sieved sasamatic speech
     def sasamatic_path(self, rank_name):
-        # sieve_transformations should add a line
-        # with their name to the data
+        # sieve_transformations could add a line
+        # with their unique_id to the data
         # and this is how they are used to rank data
         # Then you just go through the most recent
         # iteration of sasame which is the most complete
+        # The below would return an array broken up into chunks
+        # which are defined by the sieve function.
+        # Sieve functions are hard coded, so all
+        # sasamatic paths are 'useful' ones
         return self.sasame[-1].split(rank_name)
 
 # USAGE:
 
-# Transformation functions are hard coded for now
+# Transformation functions are hard coded in this example, 
 # but could also theoretically be generated
 # sasamatically
 
@@ -88,3 +95,8 @@ num_iterations = 1 #temp
 sasame = Sasame('Sasame', sasamatic_speech_transformations, sasamatic_sieve_transformations, num_iterations)
 # Choose a path through the data
 path = sasame.sasamatic_path('favorite_path_name')
+
+# NOTE:
+# A Sasamatic Algorithm is like a Genetic Algorithm,
+# except unfit genes are simply retained for future use
+# rather than eliminated via a fitness function
