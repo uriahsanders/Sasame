@@ -1,11 +1,7 @@
 # Please reference Sasame by Uriah Sanders :)
 
 # A Sasamatic Algorithm
-# in the simplest form
-# is a Sasamatic Gift
-# from Sasame.
-
-# It expands a seed of data
+# expands a seed of data
 # into something more
 # and breaks it into useful paths
 # fractally and forever
