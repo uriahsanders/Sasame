@@ -2,3 +2,13 @@ html, body {
     margin: 0 !important;
     padding: 0 !important;
 }
+#lexical_sasame{
+	border: 1px solid black;
+}
+#graphical_sasame{
+	border: 1px solid black;
+}
+#soil_input{
+	position: fixed;
+	display: block;
+}

@@ -11,6 +11,8 @@ A covert AI can (potentially dangerously) use this same technique on user data w
 I recommend the Machine Learning Course by Andrew Ng on Coursera for understanding Linear Algebra from a Machine Learning Perspective.
 https://www.coursera.org/learn/machine-learning
 
+The JS/HTML code is currently testing primary features for the Sasame website currently in the Sasasame repository. These repositories will soon be merged.
+
 With love,
 
 Uriah
